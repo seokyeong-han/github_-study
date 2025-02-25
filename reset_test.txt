@@ -1,1 +1,2 @@
 git commit 1번
+git revert 이후 commit test
