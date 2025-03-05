@@ -1,0 +1,19 @@
+touch reset_test.txt
+echo "git commit 1번" reset_test.txt
+git add .
+git commit -m "commit 1"
+echo "git commit add 1번" reset_test.txt
+git add .
+git restore —staged reset_test.txt #명령어로 staging area 제거
+git restore reset_test.txt #로컬 파일 되돌리기 
+touch reset_test.txt
+echo "git commit 2번" reset_test.txt
+git add .
+git commit -m "commit 2"
+touch reset_test.txt
+echo "git commit 3번" reset_test.txt
+git add .
+git commit -m "commit 3"
+git reset --hard ed50522 #<커밋ID>
+git revert df8d77e #<커밋ID>
+# 결과 확인
